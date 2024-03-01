@@ -1,0 +1,52 @@
+<%- include('partials/header.ejs'); %>
+<body>
+  <%- include('partials/navbar.ejs'); %>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="text-center mb-5">
+          <h1 class="display-4 text-info"><%= pergunta.titulo %></h1>
+          <p class="lead text-secondary"><%= pergunta.descricao %></p>
+
+          <hr class="my-4" />
+        </div>
+
+        <form method="POST" action="/responder" class="mb-5">
+          <h3 class="mb-3 text-info">Responda</h3>
+          <div class="form-group mb-3">
+            <!-- Adicionado mb-3 para espaçamento -->
+            <label for="respostaTextarea" class="text-secondary"
+              >Resposta</label
+            >
+            <textarea
+              id="respostaTextarea"
+              class="form-control"
+              name="corpo"
+              rows="3"
+              placeholder="Escreva aqui a sua resposta"
+              required
+            ></textarea>
+          </div>
+          <input type="hidden" name="pergunta" value="<%= pergunta.id %>" />
+          <button type="submit" class="btn btn-info mt-0">Responder</button>
+          <!-- Adicionado mt-0 para margem superior -->
+        </form>
+
+        <h3 class="text-info">Respostas</h3>
+        <hr />
+        <% if (respostas.length > 0) { %> <% respostas.forEach(resposta => { %>
+        <div class="card mb-3 border-info">
+          <div class="card-body">
+            <p class="card-text"><%= resposta.corpo %></p>
+          </div>
+        </div>
+        <% }) %> <% } else { %>
+        <p class="text-muted">
+          Nenhuma resposta ainda. Seja o primeiro a responder!
+        </p>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</body>
+<%- include('partials/footer.ejs'); %>
