@@ -24,12 +24,12 @@ Neste segmento, os alunos irão solidificar suas habilidades em:
 -	Criação das rotas iniciais `/` e `/perguntar`, que são essenciais para o fluxo de navegação do usuário, permitindo que eles vejam a página inicial e tenham a capacidade de fazer perguntas.
 -	Execução do servidor Express para servir a aplicação, ouvindo as solicitações HTTP e respondendo a elas de maneira adequada.
 -	Conclusão do Projeto:
-  o	Integração com um sistema de gestão de bases de dados, começando com SQLite para operações de armazenamento de dados leves e migrando para Sequelize e MySQL2 para uma abordagem mais robusta e escalável.
-  o	Implementação de funcionalidades mais avançadas, como autenticação de utilizador, sessões, e interações mais complexas com a base de dados.
-  o	Desenvolvimento de uma interface de utilizador interativa e amigável com a ajuda do Bootstrap 5, garantindo que a aplicação seja acessível e agradável de usar em diferentes dispositivos e tamanhos de ecrã.
-  o	Testes abrangentes para garantir a funcionalidade, segurança e desempenho da aplicação, corrigindo quaisquer bugs e refinando a experiência do utilizador.
-  o	Documentação completa do projeto, incluindo comentários de código e instruções de uso, para facilitar a manutenção futura e a contribuição de outros programadores.
-  o	Deployment da aplicação num ambiente de produção, utilizando serviços de hospedagem adequados e configurando todo o necessário para que a aplicação esteja disponível publicamente na web.
+  -	Integração com um sistema de gestão de bases de dados, começando com SQLite para operações de armazenamento de dados leves e migrando para Sequelize e MySQL2 para uma abordagem mais robusta e escalável.
+  -	Implementação de funcionalidades mais avançadas, como autenticação de utilizador, sessões, e interações mais complexas com a base de dados.
+  -	Desenvolvimento de uma interface de utilizador interativa e amigável com a ajuda do Bootstrap 5, garantindo que a aplicação seja acessível e agradável de usar em diferentes dispositivos e tamanhos de ecrã.
+  -	Testes abrangentes para garantir a funcionalidade, segurança e desempenho da aplicação, corrigindo quaisquer bugs e refinando a experiência do utilizador.
+  -	Documentação completa do projeto, incluindo comentários de código e instruções de uso, para facilitar a manutenção futura e a contribuição de outros programadores.
+  -	Deployment da aplicação num ambiente de produção, utilizando serviços de hospedagem adequados e configurando todo o necessário para que a aplicação esteja disponível publicamente na web.
 
 
 ## Execução do Projeto
